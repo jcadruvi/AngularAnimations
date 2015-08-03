@@ -1,8 +1,9 @@
 <div>
-    <div>
+    <div class="slide-header" ng-click="service.showContent = !service.showContent">
         <span>Slide In / Slide Out Animation</span>
+        <span class="slide-button" ng-bind="service.showContent ? '-' : '+'"></span>
     </div>
-    <div ng-show="service.showContent">
+    <div class="slide-content" ng-show="service.showContent">
         This is the main content for the animation.
     </div>
 </div>
