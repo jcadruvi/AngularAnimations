@@ -13,7 +13,7 @@
           .state('home', {
               url: "/home",
               templateUrl: "home.html",
-              controller: 'indexController'
+              controller: 'homeController'
         });
     });
 
