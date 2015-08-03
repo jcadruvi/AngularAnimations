@@ -8,12 +8,17 @@
     ]);
 
     app.config(function ($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise("/");
-        console.log('app');
+        $urlRouterProvider.otherwise("home");
         $stateProvider
           .state('home', {
-              url: "/",
-              template: "<div>This is a test</div>"
+              url: "/home",
+              templateUrl: "home.html",
+              controller: 'indexController'
         });
     });
+
+    app.run(['$q', '$rootScope',
+        function ($q, $rootScope) {
+
+        }]);
 })();

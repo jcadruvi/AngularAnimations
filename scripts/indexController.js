@@ -5,7 +5,6 @@
         ['$scope', 'indexService', indexController]);
 
     function indexController($scope, indexService) {
-        console.log('controller');
         $scope.service = indexService;
     }
 })();
