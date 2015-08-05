@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    angular.module('app').animation('.jc-slide', [function() {
+    angular.module('app').animation('.slide', [function() {
       return {
         // make note that other events (like addClass/removeClass)
         // have different function input parameters
