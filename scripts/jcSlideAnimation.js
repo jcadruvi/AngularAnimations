@@ -3,7 +3,9 @@
       return {
             beforeAddClass : function(element, className, done) {
                 if(className == 'ng-hide') {
-                    jQuery(element).slideUp(1000, done);
+                    $(element).velocity("slideUp", {
+                        duration: 1000
+                    });
                 }
                 else {
                     done();
@@ -11,7 +13,9 @@
             },
             removeClass : function(element, className, done) {
                 if(className == 'ng-hide') {
-                    jQuery(element).slideDown(1000, done);
+                    $(element).velocity("slideDown", {
+                        duration: 1000
+                    });
                 }
                 else {
                     done();
