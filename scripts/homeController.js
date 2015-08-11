@@ -2,9 +2,9 @@
     'use strict';
 
     angular.module('app').controller('homeController',
-        ['$scope', 'homeService', homeController]);
+        ['$scope', homeController]);
 
-    function homeController($scope, homeService) {
-        $scope.service = homeService;
+    function homeController($scope) {
+        $scope.showSlideContent = true;
     }
 })();
