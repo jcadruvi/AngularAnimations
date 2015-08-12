@@ -5,6 +5,6 @@
         ['$scope', showController]);
 
     function showController($scope) {
-        $scope.showSlideContent = true;
+        $scope.showSlideContent = false;
     }
 })();

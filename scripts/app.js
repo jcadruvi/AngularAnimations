@@ -9,12 +9,12 @@
     ]);
 
     app.config(function ($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise("home");
+        $urlRouterProvider.otherwise("show");
         $stateProvider
-          .state('home', {
-              url: "/home",
+          .state('show', {
+              url: "/show",
               templateUrl: "show.html",
-              controller: 'homeController'
+              controller: 'showController'
         });
     });
 
