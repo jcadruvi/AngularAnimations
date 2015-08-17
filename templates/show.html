@@ -1,9 +1,13 @@
-<div>
-    <div class="slide-header" ng-click="showSlideContent = !showSlideContent">
-        <span>Slide In / Slide Out Animation</span>
-        <span class="slide-button" ng-bind="showSlideContent ? '-' : '+'"></span>
-    </div>
-    <div class="slide" ng-show="showSlideContent">
-        This is the main content for the animation.
+<div class="container">
+    <div class="row">
+        <div class="col-xs-3">
+            <div class="slide-header" ng-click="showSlideContent = !showSlideContent">
+                <span>Slide In / Slide Out Animation</span>
+                <span class="slide-button" ng-bind="showSlideContent ? '-' : '+'"></span>
+            </div>
+            <div class="slide" ng-show="showSlideContent">
+                This is the main content for the animation.
+            </div>
+        </div>
     </div>
 </div>
