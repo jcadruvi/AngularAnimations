@@ -1,3 +1,10 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
 .col-fixed-160 {
   width: 160px;
   position: fixed;
@@ -19,11 +26,13 @@
 }
 
 .slide {
-  background-color: #0000F5;
+  background-color: #99CCFF;
   height: 500px;
+  @include border-radius(2px);
 }
 
 .slide-header {
-  background-color: #8585FF;
+  background-color: #47A3FF;
   padding: 12px;
+  @include border-radius(2px);
 }
