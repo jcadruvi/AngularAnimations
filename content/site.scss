@@ -1,8 +1,53 @@
+$border: 1px solid rgba(128, 128, 128, .7);
+$blue-shade-1: #99CCFF;
+$blue-shade-2: #47A3FF;
+$radius: 2px;
+
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
       -ms-border-radius: $radius;
           border-radius: $radius;
+}
+
+@mixin border-radius-top($radius) {
+  -webkit-border-top-left-radius: $radius;
+     -moz-border-top-left-radius: $radius;
+      -ms-border-top-left-radius: $radius;
+          border-top-left-radius: $radius;
+  -webkit-border-top-right-radius: $radius;
+     -moz-border-top-right-radius: $radius;
+      -ms-border-top-right-radius: $radius;
+          border-top-right-radius: $radius;
+}
+
+@mixin border-radius-bottom($radius) {
+  -webkit-border-bottom-left-radius: $radius;
+     -moz-border-bottom-left-radius: $radius;
+      -ms-border-bottom-left-radius: $radius;
+          border-bottom-left-radius: $radius;
+  -webkit-border-bottom-right-radius: $radius;
+     -moz-border-bottom-right-radius: $radius;
+      -ms-border-bottom-right-radius: $radius;
+          border-bottom-right-radius: $radius;
+}
+
+.border {
+  border: $border;
+}
+
+.border-radius {
+  @include border-radius($radius);
+}
+
+.border-radius-top {
+  @include border-radius-top($radius);
+}
+
+.border-without-bottom {
+  border-left: $border;
+  border-right: $border;
+  border-top: $border;
 }
 
 .col-fixed-160 {
@@ -26,13 +71,15 @@
 }
 
 .slide {
-  background-color: #99CCFF;
+  background-color: $blue-shade-1;
+  border-bottom: $border;
+  border-left: $border;
+  border-right: $border;
   height: 500px;
-  @include border-radius(2px);
+  @include border-radius-bottom($radius);
 }
 
 .slide-header {
-  background-color: #47A3FF;
+  background-color: $blue-shade-2;
   padding: 12px;
-  @include border-radius(2px);
 }

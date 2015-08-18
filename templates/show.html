@@ -1,7 +1,9 @@
 <div class="container">
     <div class="row">
-        <div class="col-xs-3">
-            <div class="slide-header" ng-click="showSlideContent = !showSlideContent">
+        <div class="col-xs-6">
+            <div class="slide-header border" ng-click="showSlideContent = !showSlideContent"
+                 ng-class="{ 'border-radius': !showSlideContent, 'border': !showSlideContent,
+                             'border-without-bottom': showSlideContent, 'border-radius-top': showSlideContent}"   >
                 <span>Slide In / Slide Out Animation</span>
                 <span class="slide-button" ng-bind="showSlideContent ? '-' : '+'"></span>
             </div>
