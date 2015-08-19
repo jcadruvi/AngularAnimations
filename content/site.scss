@@ -58,7 +58,7 @@ $radius: 2px;
 }
 
 .col-offset-160{
-    padding-left: 175px !important;
+  padding-left: 175px !important;
 }
 
 .site-container {
@@ -76,6 +76,7 @@ $radius: 2px;
   border-left: $border;
   border-right: $border;
   height: 500px;
+  padding: 12px;
   @include border-radius-bottom($radius);
 }
 
