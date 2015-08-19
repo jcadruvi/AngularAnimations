@@ -84,3 +84,18 @@ $radius: 2px;
   background-color: $blue-shade-2;
   padding: 12px;
 }
+
+.slide-left {
+  background-color: $blue-shade-1;
+  height: 500px;
+  padding: 12px;
+  width: 500px;
+}
+
+.slide-left-container {
+  background-color: $blue-shade-2;
+  float: left;
+  height: 500px;
+  text-align: center;
+  width: 40px;
+}
