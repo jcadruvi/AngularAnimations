@@ -6,5 +6,6 @@
 
     function showController($scope) {
         $scope.showSlideContent = false;
+        $scope.showSlideLeftContent = false;
     }
 })();

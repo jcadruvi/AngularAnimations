@@ -12,10 +12,10 @@
             </div>
         </div>
         <div class="col-xs-6">
-            <div class="slide-left-container">
+            <div class="slide-left-container" ng-click="showSlideLeftContent = !showSlideLeftContent">
                 >>
             </div>
-            <div class="slide-left">
+            <div class="slide-left" ng-show="showSlideLeftContent">
                 This is the main content for the animation.
             </div>
         </div>
