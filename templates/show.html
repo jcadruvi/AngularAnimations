@@ -12,11 +12,13 @@
             </div>
         </div>
         <div class="col-xs-6">
-            <div class="slide-left-container" ng-click="showSlideLeftContent = !showSlideLeftContent">
-                >>
+            <div class="slide-left-container"
+                 ng-bind="showSlideLeftContent ? '<<' : '>>'"
+                 ng-click="showSlideLeftContent = !showSlideLeftContent">
             </div>
-            <div class="slide-left" ng-show="showSlideLeftContent">
-                <span ng-show="showSlideLeftContent">This is the main content for the animation.<span>
+            <div class="slide-left"
+                 ng-show="showSlideLeftContent">
+                <span class="slide-left-content" ng-show="showSlideLeftContent">This is the main content for the animation.<span>
             </div>
 
         </div>

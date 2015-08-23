@@ -92,10 +92,15 @@ $radius: 2px;
   width: 500px;
 }
 
+.slide-left-content {
+  padding-left: 12px;
+}
+
 .slide-left-container {
   background-color: $blue-shade-2;
   float: left;
   height: 500px;
+  padding-top: 230px;
   text-align: center;
   width: 40px;
 }
